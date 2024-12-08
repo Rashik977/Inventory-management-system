@@ -23,7 +23,7 @@ int main()
     global.subscribeToOrganization(&org);
 
     // simulate a sale
-    product1.updateStock(6);
+    product1.buy(6);
 
     // Search for a product
     org.searchProduct("Lap");

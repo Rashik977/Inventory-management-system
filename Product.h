@@ -24,7 +24,7 @@ public:
     int getStockLevel() const { return stockLevel; }
     int getReorderThreshold() const { return reorderThreshold; }
 
-    void updateStock(int sold) { stockLevel -= sold; }
+    void buy(int sold) { stockLevel -= sold; }
     bool needsRestocking() const { return stockLevel < reorderThreshold; }
 };
 
