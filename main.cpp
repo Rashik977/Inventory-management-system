@@ -15,8 +15,8 @@ int main()
     org.addProduct(&product2);
 
     // Create suppliers
-    LocalSupplier local("Surya");
-    GlobalSupplier global("Global Supplier");
+    LocalSupplier local = LocalSupplier("Daraz");
+    GlobalSupplier global = GlobalSupplier("Amazon");
 
     // Subscribe suppliers to organization
     local.subscribeToOrganization(&org);
@@ -24,6 +24,8 @@ int main()
 
     // simulate a sale
     product1.updateStock(6);
+
+    // Search for a product
     org.searchProduct("Lap");
 
     // Generate inventory report
